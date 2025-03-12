@@ -10,6 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'build in progress'
+                bat 'node helloworld.js'
             }
         }
         stage('Test') {
